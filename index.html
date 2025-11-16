@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Ammad-Raza">
+  <meta name="description"
+    content="Ammad Raza's professional portfolio showcasing web development, design, and creative projects. Explore innovative work in front-end and back-end development.">
+  <meta name="Robots" content="index, follow">
+  <title>Ammad Raza | Front-End Web & App Developer Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+<body>
+  <!-- Desktop Navigation -->
+  <nav id="desktop-nav">
+    <div class="logo">Ammad Raza</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Mobile Navigation -->
+  <nav id="hamburger-nav">
+    <div class="logo">Ammad Raza</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Profile Section -->
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="./assets/Profile.png" alt="Ammad Raza profile picture" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">Ammad Raza</h1>
+      <p class="section__text__p2">Frontend Developer</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./assets/CV.pdf')">Download CV</button>
+        <button class="btn btn-color-1" onclick="location.href='#contact'">Contact Info</button>
+      </div>
+      <div id="socials-container">
+        <img src="./assets/LinkedIn.png" alt="My LinkedIn profile" class="icon"
+          onclick="location.href='https://www.linkedin.com'" />
+        <img src="./assets/GitHub.png" alt="My Github profile" class="icon"
+          onclick="location.href='https://github.com/'" />
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h2 class="title">About Me</h2>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img src="./assets/Profile.png" alt="Ammad Raza Profile picture" class="about-pic" />
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+            <h3>Experience</h3>
+            <p>Frontend Development</p>
+          </div>
+          <div class="details-container">
+            <img src="./assets/education.png" alt="Education icon" class="icon" />
+            <h3>Education</h3>
+            <p>I.Com. Intermediate in Commerce<br />B.Com. Bachelor of Commerce</p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+            As an <span class="role" aria-label="Front-end Web and App Developer">innovative Front-end Web and App
+              Developer</span>, I specialize in creating
+            <span class="focus" aria-label="dynamic and user-centric digital experiences">dynamic and user-centric
+              digital experiences</span> that seamlessly blend
+            <span class="design" aria-label="design">design</span> and <span class="functionality"
+              aria-label="functionality">functionality</span>. My expertise spans a wide range of cutting-edge
+            <span class="tech-stack" aria-label="front-end technologies">front-end technologies</span>, including
+            <span class="tech" aria-label="React">React</span>, <span class="tech"
+              aria-label="TailwindCSS">TailwindCSS</span>,
+            <span class="tech" aria-label="Bootstrap">Bootstrap</span>, <span class="tech"
+              aria-label="Vue.js">Vue.js</span>, and more.
+            With a deep understanding of <span class="web-skills" aria-label="responsive web design">responsive web
+              design</span>,
+            <span class="html-css" aria-label="HTML5">HTML5</span>, <span class="html-css"
+              aria-label="CSS3">CSS3</span>,
+            <span class="js-ts" aria-label="JavaScript">JavaScript</span>, <span class="js-ts"
+              aria-label="TypeScript">TypeScript</span>,
+            <span class="ux-ui" aria-label="UI/UX principles">UI/UX principles</span>,
+            <span class="web-performance" aria-label="web performance">web performance</span>, and
+            <span class="accessibility" aria-label="accessibility">accessibility</span>, I empower businesses and
+            organizations to establish a powerful
+            <span class="online-presence" aria-label="online presence">online presence</span>.
+            With <span class="years-experience" aria-label="years of hands-on experience">years of hands-on
+              experience</span> across diverse projects, I’ve refined my skills through
+            <span class="collaboration" aria-label="collaboration">collaboration</span> and continuous learning, always
+            striving to push the boundaries of what’s possible in
+            <span class="web-dev" aria-label="web development">web development</span>.
+          </p>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#experience'" />
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience">
+    <p class="section__text__p1">Explore My</p>
+    <h2 class="title">Experience</h2>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h3 class="experience-sub-title">Frontend Development</h3>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Skill checkmark icon" class="icon" />
+              <div>
+                <h4>HTML</h4>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Skill checkmark icon" class="icon" />
+              <div>
+                <h4>CSS</h4>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Skill checkmark icon" class="icon" />
+              <div>
+                <h4>TailwindCSS</h4>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Skill checkmark icon" class="icon" />
+              <div>
+                <h4>Bootstrap</h4>
+                <p>Basic</p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="details-container">
+          <h3 class="experience-sub-title">Backend Development</h3>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Skill checkmark icon" class="icon" />
+              <div>
+                <h4>Javascript</h4>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Skill checkmark icon" class="icon" />
+              <div>
+                <h4>Node JS</h4>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Skill checkmark icon" class="icon" />
+              <div>
+                <h4>Python</h4>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Skill checkmark icon" class="icon" />
+              <div>
+                <h4>Git</h4>
+                <p>Intermediate</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#projects'" />
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h2 class="title">Projects</h2>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-1.png" alt="Project 1" class="project-img" />
+          </div>
+          <h3 class="experience-sub-title project-title">Project One</h3>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn">Github</button>
+            <button class="btn btn-color-2 project-btn">Live Demo</button>
+          </div>
+        </div>
+
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-2.png" alt="Project 2" class="project-img" />
+          </div>
+          <h3 class="experience-sub-title project-title">Project Two</h3>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn">Github</button>
+            <button class="btn btn-color-2 project-btn">Live Demo</button>
+          </div>
+        </div>
+
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-3.png" alt="Project 3" class="project-img" />
+          </div>
+          <h3 class="experience-sub-title project-title">Project Three</h3>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn">Github</button>
+            <button class="btn btn-color-2 project-btn">Live Demo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#contact'" />
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h2 class="title">Contact Me</h2>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+        <p><a href="mailto:ammadraza12345678910@gmail.com">Email me</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+        <p><a href="https://www.linkedin.com/in/ammad-raza/">LinkedIn</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <p>Copyright 2025 Ammad Raza. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
